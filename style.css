@@ -61,7 +61,7 @@ header nav .nav-links a:hover::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +72,7 @@ header nav .nav-links a:hover::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -327,8 +327,8 @@ hr {
     margin-right: 10px;
 }
 table {
-    width: 60% !important;
-    max-width: 500px !important;
+    width: 80% !important;
+    max-width: 600px !important;
     border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -337,14 +337,14 @@ table {
     text-align: center;
     margin-bottom: 20px;
     border: 2px solid #3498db;
-    margin: auto;
+    margin: 20px auto;
     background-color: rgba(255, 255, 255, 0.9) !important; /* White with 90% opacity */
 }
 
 th, td {
     border: 2px solid #ddd;
     padding: 12px;
-    text-align: center;
+    text-align: center;	
 }
 
 th {
@@ -362,7 +362,7 @@ th {
 }
 
 .schedule-container {
-    width: 60% !important;
+    width: 80% !important;
     max-width: 800px !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -372,12 +372,18 @@ th {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.7) !important; /* White with 90% opacity */
 	text-align: center
-	
 }
 .schedule-container {
 	color: black;
 }
-
+body {
+    background-image: url('multimedia/imgbg.jpg'); /* Replace 'path/to/imgbg.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
   
   
