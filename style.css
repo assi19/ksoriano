@@ -326,5 +326,47 @@ hr {
     margin-bottom: 10px;
     margin-right: 10px;
 }
+table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 50);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 20px;
+			margin-right: 20px;
+            border: 2px solid #3498db; /* Overall border color */
+			margin: auto;
+			
+        }
+
+        th, td {
+            border: 2px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .vacant {
+            background-color: #f39c12; /* Adjusted vacant color */
+            color: #fff;
+        }
+
+        .days, .time, .subject {
+            background-color: #D4D4D4;
+        }
+		.schedule-container {
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 2px solid #B2AEAE;
+            padding: 20px;
   
   
