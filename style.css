@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 .btn{
-    padding: 15px 35px;
+    padding: 15px 25px;
     background: linear-gradient(to left, #4200fc , #f901fc);
     border-radius: 30px;
     color: #fff;
@@ -17,6 +17,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+	margin: auto;
 }
 header nav{
     width: 80%;
@@ -56,12 +57,13 @@ header nav .nav-links a:hover::after{
 }
 
 .content{
-    padding-top: 70px;
+	max-width: 80%; /* Adjust the max-width as needed */
+    padding-top: 5%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,22 +100,27 @@ header nav .nav-links a:hover::after{
     color: white;
 }
 .kris-text {
-    padding: 20px 0;    
+    padding: 5px;    
   }
   
   .kris-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 5px;
   }
   
   .kris-text span {
     font-size: 18px;
   }
   
-  .image-gallery {
+.image-gallery {
+    position: fixed;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-  }
+    z-index: 1000; /* Adjust as needed, ensure it has a higher value than other elements if necessary */
+}
   
   .image-gallery img {
     width: 300px; /* Adjust the width to your preference */
@@ -377,13 +384,10 @@ th {
 	color: black;
 }
 body {
-    background-image: url('multimedia/imgbg.jpg'); /* Replace 'path/to/imgbg.jpg' with the actual path to your image */
+    background: url('multimedia/imgbg.jpg') repeat; /* Replace 'path/to/imgbg.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-
-  
-  
