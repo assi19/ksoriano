@@ -12,6 +12,29 @@
     <!-- link file CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+    // Example: Validate and submit the contact form using JavaScript
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function (event) {
+            // Remove the preventDefault to allow the default form submission
+            // event.preventDefault();
+
+            // Perform form validation here
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Form will be submitted using default behavior
+        });
+    });
+</script>
 </head>
 <body>
     <div class="contanier">
@@ -30,10 +53,10 @@
             </nav>
         </header>
 
-        <div class="content">
+        <div class="contact">
             <div class="kris-text">
                 <h1>Contact Me</h1>
-                <span></span>
+                <span></span>			
                 <ul class="contact-list">
                     <li><a href="https://www.facebook.com/krizz19" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
                     <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
@@ -41,12 +64,37 @@
                     <li><a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                   </ul>
             </div>
-            <div class="kris-img">
-                <img src="multimedia/kris.png" alt="">
-            </div>
         </div>
-        
+        <div class="form">
+			<form action="process_form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required> <br>
 
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required> <br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" required></textarea><br>
+
+				<button type="submit">Send Message</button>
+			</form>
+						<br>
+			<div class="testimonials">
+				<blockquote>
+					"I had a great experience working with [Your Name].<br> They were responsive and delivered quality work."
+				</blockquote>
+				<p>- Happy Client</p><br>
+			</div>
+			<br>
+			<div class="cta">
+				<p>Stay updated with my latest projects and news. <br>Subscribe to my newsletter!</p>
+				<button>Subscribe Now</button>
+			</div>
+			<div class="animated-icons">
+				<i class="fas fa-envelope"></i>
+				<i class="fas fa-phone"></i>
+			</div>
+		</div>
         <div class="soial-links">
             <span>Follow Me</span>
             <a href="https://www.facebook.com/krizz19" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
