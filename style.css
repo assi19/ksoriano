@@ -218,6 +218,7 @@ button:hover {
   .kris-text h1 {
     font-size: 28px;
     margin-bottom: 5px;
+	color: linear-gradient(to left, #4200fc , #f901fc);
   }
   
   .kris-text span {
@@ -274,6 +275,7 @@ button:hover {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-right: 10px;
+	margin-left: 180px;
 }
 
 /* Change background image (linear gradient) on hover */
@@ -578,7 +580,7 @@ th {
     border-radius: 5px;
 }
 body {
-    background: url('multimedia/imgbg.jpg') repeat; /* Replace 'path/to/imgbg.jpg' with the actual path to your image */
+    background: url('multimedia/imgbg1.jpg') repeat; /* Replace 'path/to/imgbg.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     margin: 0;
