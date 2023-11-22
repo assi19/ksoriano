@@ -13,14 +13,14 @@
     font-size: 18px;
 }
 .contanier{
-    width: 100%;
+    width: 900px;
     height: 100%;
-    position: relative;
+    position: center;
     overflow: hidden;
 	margin: auto;
 }
 header nav{
-    width: 80%;
+    width: 1024px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header nav{
     height: 100px;
     padding-top: 20px;
     z-index: 100;
-    position: relative;
+    position: center;
 }
 header nav .logo{
     font-size: 35px;
@@ -39,12 +39,12 @@ header nav .logo{
 }
 header nav .nav-links a{
     color: #fff;
-    margin-left: 50px;
+    margin-left: 75px;
     position: relative;
 }
 header nav .nav-links a::after{
     content: '';
-    position: absolute;
+    position: center;
     bottom: -8px;
     left: 0;
     width: 0%;
@@ -57,16 +57,29 @@ header nav .nav-links a:hover::after{
 }
 
 .content{
-	max-width: 80%; /* Adjust the max-width as needed */
+	max-width: 900px; /* Adjust the max-width as needed */
     padding-top: 5%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 250px;
     left: 50%;
+	margin-left: 30px;
     transform: translate(-50%, -50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.about-header {
+	width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-top: 20px;
+    z-index: 100;
+    position: center;
+	
 }
 .about {
     padding-top: 70px;
@@ -74,7 +87,7 @@ header nav .nav-links a:hover::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
+    width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,14 +99,15 @@ header nav .nav-links a:hover::after{
 	max-width: 80%; /* Adjust the max-width as needed */
     padding-top: 5%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 100%;
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
 	color: white;
+	
 }
 .contact h1{
     color: #fff;
@@ -101,15 +115,14 @@ header nav .nav-links a:hover::after{
     margin-bottom: 15px;
 }
 .form {
-	max-width: 80%; /* Adjust the max-width as needed */
+	max-width: 800px; /* Adjust the max-width as needed */
     padding-top: 5%;
     position: absolute;
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
     width: 100%;
-    display: flex;
-    
+    display: flex;   
     align-items: center;
 	color: white;
 }
@@ -254,7 +267,9 @@ button:hover {
 .content h1{
     color: #fff;
     font-size: 60px;
-    margin-bottom: 15px;
+    
+	margin-left: 160px;
+	position: relative;
 }
 .content span{
     background: linear-gradient(to left, #4200fc , #f901fc);
@@ -263,6 +278,8 @@ button:hover {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 1.5px;
+	margin-left: 5px;
+	position: relative;
 }
 .content p {
     color: #fff;
@@ -275,7 +292,8 @@ button:hover {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-right: 10px;
-	margin-left: 180px;
+	margin-left: 160px;
+	position: relative;
 }
 
 /* Change background image (linear gradient) on hover */
@@ -420,7 +438,7 @@ footer a:hover {
 }
 .about-paragraph {
     color: #fff;
-    margin-top: 10px; /* Adjust margin to create space */
+    margin-top: 5px; /* Adjust margin to create space */
     margin-bottom: 10px; /* Adjust margin to create space */
     line-height: 1.5;
     transition: background 0.3s ease;
@@ -429,11 +447,13 @@ footer a:hover {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-right: 10px;
+	margin-left: 5px;
+	position: relative;
 }
 
 .about-list {
     color: #fff;
-    margin-top: 10px; /* Adjust margin to create space */
+    margin-top: 5px; /* Adjust margin to create space */
     margin-bottom: 10px; /* Adjust margin to create space */
     line-height: 1.5;
     transition: background 0.3s ease;
@@ -443,6 +463,14 @@ footer a:hover {
     border-radius: 10px;
     list-style-type: none; /* Remove default bullet points */
     margin-right: 10px;
+	margin-left: 5px;
+}
+.about-h1 {
+	margin-top: 2px;
+}
+.about-hr {
+	margin-top: 20px;
+	position: relative;
 }
 
 .about-paragraph:hover, .about-list:hover {
